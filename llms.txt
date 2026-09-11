@@ -7,7 +7,7 @@ Key facts:
 - Location: India; remote-first; clients in India, USA, UK, EU, UAE, Singapore, Australia.
 - Contact: hello@founderielabs.com; WhatsApp/phone +91 99999 99999; https://founderie-labs.vercel.app/contact
 - Positioning: product studio + services + consulting. An engineering company that ships its own products and explains technology in plain English for non-technical business owners.
-- Products: Kadha — "the journal that turns into your tracker" (AI journaling app that converts spoken/typed/WhatsApp entries into health & wellness trackers; iOS, Android, WhatsApp; closed beta early 2027; https://kadha-flame.vercel.app/). More products planned, listed at https://founderie-labs.vercel.app/products
+- Products: Kadha — "the journal that turns into your tracker" (AI journaling app that converts spoken/typed/WhatsApp entries into health & wellness trackers; iOS, Android, WhatsApp; closed beta early 2027; https://kadha-flame.vercel.app/). More products planned; the list lives at https://founderie-labs.vercel.app/products
 - Guarantees: written fixed-scope quotes, weekly demos, client owns all code/accounts/data, 30-day post-launch defect warranty, no lock-in.
 - Payment models: Cash (fixed price or retainer); Royalty (30–60% lower upfront fee plus capped/time-limited % of revenue); Equity/stake (selective, technical co-founder role).
 - Indicative pricing (cash): websites US$1.5k–6k; online stores US$4k–15k; internal tools US$6k–30k; mobile apps US$12k–50k; SaaS MVP US$20k–80k; automation/AI US$2k–25k.

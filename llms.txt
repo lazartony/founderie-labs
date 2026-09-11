@@ -20,8 +20,8 @@ Key facts:
 - [Services](https://founderie-labs.vercel.app/services): custom software, websites & e-commerce, mobile apps, automation & AI, cloud & DevOps, maintenance; indicative pricing table
 - [How we work](https://founderie-labs.vercel.app/how-we-work): five-step process; cash vs royalty vs equity comparison
 - [Consulting](https://founderie-labs.vercel.app/consulting): fractional CTO, audits, roadmaps, vendor selection, AI readiness
-- [Training](https://founderie-labs.vercel.app/training): corporate training, career programmes, workshops, internship-to-hire
-- [Talent](https://founderie-labs.vercel.app/talent): dedicated developers, DevOps, designers, QA; monthly engagements with replacement guarantee
+- [Training](https://founderie-labs.vercel.app/training): corporate training, career programmes, workshops, internship-to-hire (run on request)
+- [Talent](https://founderie-labs.vercel.app/talent): dedicated developers, DevOps, designers, QA; monthly engagements arranged on request
 - [About](https://founderie-labs.vercel.app/about): company values and legal details
 - [Contact](https://founderie-labs.vercel.app/contact)
 - [Privacy](https://founderie-labs.vercel.app/privacy)

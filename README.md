@@ -4,6 +4,15 @@ Static site for https://founderie-labs.vercel.app (product studio · services ·
 
 Plain HTML/CSS/JS, no build step. Deployed on Vercel (clean URLs and security headers in `vercel.json`).
 
+## To do before this is "finished"
+
+- [ ] **Phone / WhatsApp number** — `+91 99999 99999` and `wa.me/919999999999` are placeholders (contact page, footer, JSON-LD, floating WhatsApp button, CTA bands on every page). Search-and-replace both forms across all `.html` files and `llms.txt`.
+- [ ] **Social links** — `linkedin.com/company/founderie-labs` and `github.com/founderie-labs` are assumed; create them or change the URLs (footer, JSON-LD `sameAs`, the "Follow for launches" product card).
+- [ ] **Contact form backend** — `FL_CONFIG.formEndpoint` is empty, so the form falls back to opening the visitor's email app. Set a Formspree / Web3Forms endpoint + key in the `FL_CONFIG` block of every page (the CSP already allows both).
+- [ ] **Analytics** — `ga4` and `clarity` in `FL_CONFIG` are placeholders; analytics stays off until real IDs are set.
+- [ ] **Icons / OG image** — `favicon.ico`, `icon-*.png`, `apple-touch-icon.png` and `og.png` were regenerated from `favicon.svg`; replace with the originals if you have them.
+- [ ] **Custom domain** — canonical URLs, sitemap and JSON-LD all point at `founderie-labs.vercel.app`; search-and-replace when a domain is attached.
+
 ## Adding a product
 
 Products are listed in two places — keep them in sync:

@@ -1,4 +1,4 @@
-/* Founderie Labs — site.js
+/* Founderie Labs site.js
    Analytics (GA4 + Microsoft Clarity, consent-gated), behavioural events,
    UTM capture, share bar, contact form, nav. No dependencies. */
 (function () {
@@ -162,12 +162,12 @@
       ev.preventDefault();
       if ($('.hp input', f) && $('.hp input', f).value) return; // honeypot
       var data={}; $$('input,select,textarea', f).forEach(function(el){ if(el.name) data[el.name]=el.value; });
-      data.page=location.href; data.first_touch=store('fl_first_touch')||''; data.last_touch=store('fl_last_touch')||''; data.subject='New enquiry from '+(data.name||'website')+' — Founderie Labs';
+      data.page=location.href; data.first_touch=store('fl_first_touch')||''; data.last_touch=store('fl_last_touch')||''; data.subject='New enquiry from '+(data.name||'website')+' | Founderie Labs';
       if (FORM_KEY) data.access_key=FORM_KEY;
       var btn=$('button[type=submit]', f); btn.disabled=true; btn.textContent='Sending…';
       function ok(){ msg.className='form-msg ok'; msg.textContent='Got it. We’ll reply within one business day.'; f.reset(); btn.disabled=false; btn.textContent='Send enquiry';
         track('generate_lead',{form:'lead', model:data.model||'', budget:data.budget||'', need:data.need||''}); }
-      function fail(){ msg.className='form-msg err'; msg.innerHTML='Could not send automatically. Please email <a href="mailto:'+CONTACT_EMAIL+'">'+CONTACT_EMAIL+'</a> — your message has been copied to your email client.'; btn.disabled=false; btn.textContent='Send enquiry';
+      function fail(){ msg.className='form-msg err'; msg.innerHTML='Could not send automatically. Please email <a href="mailto:'+CONTACT_EMAIL+'">'+CONTACT_EMAIL+'</a>. Your message has been copied to your email client.'; btn.disabled=false; btn.textContent='Send enquiry';
         track('form_error',{form:'lead'});
         var body=Object.keys(data).filter(function(k){return !/touch|access_key|subject/.test(k);}).map(function(k){return k+': '+data[k];}).join('\n');
         location.href='mailto:'+CONTACT_EMAIL+'?subject='+encodeURIComponent(data.subject)+'&body='+encodeURIComponent(body); }

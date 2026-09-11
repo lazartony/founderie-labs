@@ -1,0 +1,87 @@
+/* ============================================================
+   Founderie Labs — THEME
+   ------------------------------------------------------------
+   Every colour, font and shape used on the site is defined here
+   and nowhere else. site.css only ever refers to these variables,
+   so changing the look of the whole site means editing this file.
+
+   How to re-theme:
+     1. Brand colours   → change --accent (and its two shades).
+     2. Fonts           → change --font / --mono (and --text-size).
+     3. Light surfaces  → --paper / --white / --panel / --line*.
+     4. Dark sections   → --dark* (hero, pricing, footer, page heroes).
+     5. Corners         → --radius.
+   After editing, bump the ?v= query string on theme.css/site.css
+   in every HTML file so browsers pick up the new version.
+
+   Two things live outside CSS and must be changed by hand if the
+   palette changes:
+     • <meta name="theme-color"> in each HTML <head> (= --dark)
+     • og.png and the icon PNGs (generated from favicon.svg,
+       which uses --accent for the square and --on-accent for the F)
+   ============================================================ */
+:root{
+  /* ---------- 1. Brand ---------- */
+  --accent:#e8551c;        /* primary orange: buttons, tags, logo square */
+  --accent-2:#ff7a45;      /* lighter orange: links/eyebrows on dark backgrounds */
+  --accent-ink:#b23c0d;    /* darker orange: links/eyebrows on light backgrounds */
+  --on-accent:#ffffff;     /* text/icon colour placed on top of --accent */
+  --accent-soft:#ffe9df;   /* very light tint: hover state of white buttons on orange */
+  --accent-ring:rgba(232,85,28,.12); /* glow around the highlighted pricing card */
+
+  /* ---------- 2. Typography ---------- */
+  --font:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif;
+  --mono:ui-monospace,SFMono-Regular,Menlo,Consolas,"Liberation Mono",monospace; /* eyebrows, prices, code */
+  --text-size:17px;        /* base body size; everything else is relative (rem) */
+  --heading-weight:800;
+  --line-height:1.55;
+
+  /* ---------- 3. Light surfaces & text ---------- */
+  --paper:#f7f8fa;         /* page background */
+  --white:#ffffff;         /* cards, forms, "white" sections */
+  --panel:#eef1f5;         /* subtle fills: hover states, code chips, tables */
+  --line:#e3e7ec;          /* default borders */
+  --line-2:#cfd6de;        /* stronger borders: inputs, ghost buttons */
+  --ink:#0b0f14;           /* main text */
+  --ink-2:#1f2731;         /* nav links, secondary headings */
+  --muted:#5b6672;         /* body copy in cards, captions */
+  --hdr-bg:rgba(247,248,250,.92); /* sticky header (translucent --paper) */
+
+  /* ---------- 4. Dark surfaces & text ---------- */
+  --dark:#0b0f14;          /* hero, pricing band, footer, page heroes */
+  --dark-2:#121821;        /* cards on dark */
+  --dark-line:#243040;     /* borders on dark, hero grid lines */
+  --dark-text:#e6ebf1;     /* body text on dark */
+  --dark-muted:#98a5b4;    /* secondary text on dark */
+  --on-dark:#ffffff;       /* headings on dark */
+
+  /* ---------- 5. Gradient CTA band ---------- */
+  --band-from:var(--accent);
+  --band-to:var(--accent-ink);
+  --band-text:rgba(255,255,255,.88);
+  --band-line:rgba(255,255,255,.5);
+  --band-hover:rgba(255,255,255,.12);
+
+  /* ---------- 6. Status colours (form messages, notices) ---------- */
+  --ok-bg:#e9f8ee;    --ok-ink:#14532d;    --ok-line:#bde5c8;
+  --err-bg:#fdecec;   --err-ink:#7f1d1d;   --err-line:#f5c2c2;
+  --note-bg:#fff7ed;  --note-ink:#7c2d12;  --note-line:#fed7aa;
+
+  /* ---------- 7. Third-party ---------- */
+  --whatsapp:#25d366;      /* floating WhatsApp button (brand green) */
+  --on-whatsapp:#ffffff;
+
+  /* ---------- 8. Shadows ---------- */
+  --shadow-sm:0 10px 30px rgba(0,0,0,.15);
+  --shadow-md:0 6px 18px rgba(0,0,0,.25);
+  --shadow-lg:0 30px 60px rgba(0,0,0,.45);
+
+  /* ---------- 9. Shape & layout ---------- */
+  --radius:6px;            /* buttons, cards, inputs */
+  --radius-lg:8px;         /* larger panels (hero card) */
+  --max:1160px;            /* content width */
+}
+
+/* Logo mark: the SVG in the header/footer takes its colours from here. */
+.mark rect{fill:var(--accent)}
+.mark path{fill:var(--on-accent)}

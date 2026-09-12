@@ -12,7 +12,7 @@ Key facts:
 - Payment models: Cash (fixed price or retainer); Royalty (30–60% lower upfront fee plus capped/time-limited % of revenue); Equity/stake (selective, technical co-founder role).
 - Indicative pricing (cash): websites US$1.5k–6k; online stores US$4k–15k; internal tools US$6k–30k; mobile apps US$12k–50k; SaaS MVP US$20k–80k; automation/AI US$2k–25k.
 - Typical stack: TypeScript/React/Next.js, Flutter/React Native, Node.js/Python/Go, PostgreSQL, AWS/GCP/Azure.
-- No public portfolio yet (new company founded by experienced engineers).
+- No public portfolio yet (young company). Team: small core team of partners plus a private network of engineers brought in per project; every project is led by a partner.
 
 ## Pages
 - [Home](https://founderie-labs.vercel.app/): overview, payment models, process, FAQ
